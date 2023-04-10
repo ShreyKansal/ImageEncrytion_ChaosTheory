@@ -1,0 +1,14 @@
+import cv2
+import numpy as np
+img = cv2.imread('image69.png')
+b, g, r = cv2.split(img)
+float ttl = img.size / 3 
+B = float(np.sum(b)) / ttl 
+G = float(np.sum(g)) / ttl
+R = float(np.sum(r)) / ttl
+B_mean1 = list()
+G_mean1 = list()
+R_mean1 = list()
+B_mean1.append(B)
+G_mean1.append(G)
+R_mean1.append(R)
